@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(cors());
 
 function validateRepository(request, response, next) {
-
   const { id } = request.params;
 
   const repositoryIndex = repositories.findIndex(repository => repository.id === id);
